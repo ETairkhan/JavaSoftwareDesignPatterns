@@ -1,3 +1,5 @@
+package Builder;
+
 public class AnimalDirector {
     private final AnimalBuilder builder;
 
@@ -27,7 +29,7 @@ public class AnimalDirector {
         builder.setName("Dog");
         builder.setWeight(24);
         builder.setHeight(34);
-        builder.setContinent("World");
+        builder.setContinent("Everywhere");
         return builder.build();
     }
 

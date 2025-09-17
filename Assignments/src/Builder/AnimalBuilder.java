@@ -1,3 +1,5 @@
+package Builder;
+
 public interface AnimalBuilder {
     void setName(String name);
     void setType(String type);

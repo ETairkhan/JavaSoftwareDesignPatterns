@@ -1,3 +1,5 @@
+package Builder;
+
 public class Animal {
     private String name;
     private String type;
@@ -45,10 +47,9 @@ public class Animal {
         this.continent = continent;
     }
 
-    @Override
     public String toString(){
         return "The animal name is " + this.name + ", its type is " + this.type +
-                ". Animal weight and height are " + this.weight + "kg and " +
+                ".Animal weight and height are " + this.weight + "kg and " +
                 this.height + "cm. This species lives only in " + this.continent;
     }
 }
