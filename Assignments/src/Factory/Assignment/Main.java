@@ -1,5 +1,6 @@
 package Factory.Assignment;
 
+import Factory.Assignment.Client.Client;
 import Factory.Assignment.interfaces.GUIFactory;
 
 public class Main {

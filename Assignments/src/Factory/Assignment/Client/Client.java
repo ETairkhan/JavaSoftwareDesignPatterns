@@ -1,4 +1,5 @@
-package Factory.Assignment;
+package Factory.Assignment.Client;
+import Factory.Assignment.Factory.FactoryConcrete;
 import Factory.Assignment.interfaces.*;
 
 import java.util.Scanner;

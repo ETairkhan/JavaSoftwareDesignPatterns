@@ -1,4 +1,4 @@
-package Factory.Assignment;
+package Factory.Assignment.Windows;
 import Factory.Assignment.interfaces.*;
 
 public abstract class WindowsConcrete {
