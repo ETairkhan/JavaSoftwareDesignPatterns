@@ -14,4 +14,16 @@ public abstract class Works{
             System.out.println("Coded FileExplorer to make it convenient");
         }
     }
+    public static class Settings implements Work {
+        @Override
+        public void work() {
+            System.out.println("Opening system settings");
+        }
+    }
+    public static class SecurityCenter implements Work {
+        @Override
+        public void work() {
+            System.out.println("Running security check");
+        }
+    }
 }
