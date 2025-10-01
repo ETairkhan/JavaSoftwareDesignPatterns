@@ -39,7 +39,4 @@ public class ModernFirearm {
             this.damage = damage;
         }
     }
-
-
-
 }
