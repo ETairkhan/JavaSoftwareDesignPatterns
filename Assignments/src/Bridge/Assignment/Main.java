@@ -1,4 +1,4 @@
-package Bridge;
+package Bridge.Assignment;
 
 import Bridge.Assignment.Runner.Runner;
 
