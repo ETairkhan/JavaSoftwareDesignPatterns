@@ -1,4 +1,6 @@
-package Bridge.Assignment;
+package Bridge.Assignment.OS;
+
+import Bridge.Assignment.Works.interfaces.Work;
 
 import java.util.List;
 public abstract class OS {
@@ -34,7 +36,7 @@ public abstract class OS {
 
         @Override
         protected void runWork(Work work){
-            System.out.println("Windows running: ");
+            System.out.println("MacOS running: ");
             work.work();
         }
     }
@@ -46,7 +48,7 @@ public abstract class OS {
 
         @Override
         protected void runWork(Work work){
-            System.out.println("Windows running: ");
+            System.out.println("Linux running: ");
             work.work();
         }
     }

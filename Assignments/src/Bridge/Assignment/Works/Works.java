@@ -1,7 +1,9 @@
-package Bridge.Assignment;
+package Bridge.Assignment.Works;
+
+import Bridge.Assignment.Works.interfaces.Work;
 
 public abstract class Works{
-    public static class Terminal implements Work{
+    public static class Terminal implements Work {
         @Override
         public void work(){
             System.out.println("Coded Terminal");

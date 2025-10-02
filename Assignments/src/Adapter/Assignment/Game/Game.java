@@ -9,7 +9,6 @@ public class Game {
 
     public void play() {
         System.out.println("=== Демонстрация двустороннего адаптера ===\n");
-
         MagicStick fireWand = new MagicStick(100, "Огненный жезл", true);
         MagicStick iceStaff = new MagicStick(50, "Ледяной посох", false);
 
