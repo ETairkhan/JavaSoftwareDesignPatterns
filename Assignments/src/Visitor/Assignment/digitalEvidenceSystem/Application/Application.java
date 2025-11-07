@@ -1,8 +1,7 @@
 package Visitor.Assignment.digitalEvidenceSystem.Application;
 
 
-import Visitor.Assignment.digitalEvidenceSystem.core.DigitalImage;
-import Visitor.Assignment.digitalEvidenceSystem.core.EvidenceItem;
+import Visitor.Assignment.digitalEvidenceSystem.core.*;
 import Visitor.Assignment.digitalEvidenceSystem.core.NetworkCapture;
 import Visitor.Assignment.digitalEvidenceSystem.visitor.AnalyzeVisitor;
 import Visitor.Assignment.digitalEvidenceSystem.visitor.EvidenceVisitor;
@@ -50,9 +49,18 @@ public class Application {
         addEvidence(image2);
         addEvidence(capture1);
         addEvidence(capture2);
+        addEvidence(new AudioRecording("AUD-001", "Room 101", 180));
+        addEvidence(new AudioRecording("AUD-002", "Hallway", 600));
+
+        addEvidence(new VideoRecording("VID-001", "CAM-001", 30));
+        VideoRecording silentVideo = new VideoRecording("VID-002", "CAM-002", 15);
+        silentVideo.setHasAudio(false);
+        addEvidence(silentVideo);
+
+        System.out.println("✅ Added " + allEvidence.size() + " evidence items\n");
 
         analyze();
-
+        System.out.println();
         export();
     }
 
